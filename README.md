@@ -1,0 +1,4 @@
+AngularJS-GanttChart
+====================
+
+GanttChart Directive
