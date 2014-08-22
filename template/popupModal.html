@@ -1,0 +1,37 @@
+ <div class="modal-header">
+        {{date}}   
+ </div>
+     <div class="modal-body">
+
+    <form class="form-horizontal" role="form" name="myform" ng-model="objform"> 
+     <table class="form-group-ed" width="100%">
+			<tr>
+			<td class="tb-col-ed-2"><label class="col-ed-2 control-label">Name :</label></td>
+			<td>
+					<input type="text" class="form-control" ng-model="objform.objname" required></td>
+			<td class="emptyRightMargin"></td>
+			</tr>
+	</table>
+	<hr>
+	  <table class="form-group-ed" width="100%">
+			<tr>
+			<td class="tb-col-ed-2"><label class="col-ed-2 control-label">From :</label>
+			
+
+			</td>
+			
+			<td class="tb-col-ed-2"><label class="col-ed-2 control-label">To :</label></td>
+			<td>	
+					
+			<td class="emptyRightMargin"></td>
+			</tr>
+	</table>
+
+
+	</form>
+        
+     </div>
+ <div class="modal-footer">
+            <button class="btn btn-primary" ng-disabled="!myform.$valid" style="width:100px;"  ng-click="ok()">OK</button>
+            <button class="btn btn-warning"  style="width:100px;" ng-click="cancel()">Cancel</button>
+ </div>
